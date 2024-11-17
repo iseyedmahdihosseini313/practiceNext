@@ -3,9 +3,8 @@ import { ItemBox } from '@/components';
 
 export default function Home() {
      const miniprojects = [
-          { title: 'ثبت نام', href: '/register' },
-          { title: 'ورود', href: '/login' },
-          { title: 'لیست کاربران', href: '/users' },
+          { title: 'Register', href: '/register' },
+          { title: 'LogIn', href: '/login' },
      ];
      return (
           <div className="flex gap-3 m-12">

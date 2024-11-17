@@ -10,15 +10,15 @@ export default function RootLayout({
      children: React.ReactNode;
 }>) {
      return (
-          <html lang="fa" dir="rtl">
+          <html lang="en" >
                <body className={vazir.className}>
                     <div
                          className={
                               'w-screen h-screen overflow-hidden bg-gradient-to-t from-blue-900 to-black/90 flex justify-center items-center text-white/80 tracking-wide  '
                          }
                     >
-                         <div className="flex min-w-[100%] min-h-[100%]   lg:w-72 bg-gradient-to-tr from-bg-cyan-50/15  rounded-sm  shadow-inner shadow-slate-400 ">
-                              {' '}
+                         <div className="flex min-w-[100%] min-h-[100%]   shadow-inner shadow-slate-500 ">
+                             
                               {children}
                          </div>
                     </div>
