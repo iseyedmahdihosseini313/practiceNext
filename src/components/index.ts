@@ -3,6 +3,7 @@ import InputBox from './common/inputbox/inputbox';
 import ItemBox from './common/itemBox/itemBox';
 import Form from './futures/common/form/form';
 import RegisterForm from './futures/registerForm/registerForm';
+import LoginForm from './futures/loginForm/loginForm';
 
 
-export { Button,ItemBox,Form ,InputBox,RegisterForm};
+export { LoginForm,Button,ItemBox,Form ,InputBox,RegisterForm};
