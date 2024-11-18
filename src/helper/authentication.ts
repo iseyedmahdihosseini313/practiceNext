@@ -1,5 +1,5 @@
+import User from '@/models/mongodbModels/user';
 import * as jose from 'jose';
-import mongoose from 'mongoose';
 import { NextRequest } from 'next/server';
 
 export const jwtConfig = {
