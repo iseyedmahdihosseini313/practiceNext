@@ -1,4 +1,4 @@
-import User from '@/models/mongodbModels/user';
+// import User from '@/models/mongodbModels/user';
 import * as jose from 'jose';
 import { NextRequest } from 'next/server';
 
@@ -49,18 +49,18 @@ export const getUserID = async (token?: string) => {
      return userId;
 };
 
-export const getUserInfo = async (req: any) => {
-     const auth_status = await isAuthenticated(req);
-     if (auth_status.status) {
-          const user = await User.findOne({}).select({
-               id: 1,
-               username: 1,
-               fullname: 1,
-               phonenumber: 1,
-               password: 0,
-          });
-          return user;
-     } else {
-          return { status: false, message: auth_status?.message };
-     }
-};
+// export const getUserInfo = async (req: any) => {
+//      const auth_status = await isAuthenticated(req);
+//      if (auth_status.status) {
+//           const user = await User.findOne({}).select({
+//                id: 1,
+//                username: 1,
+//                fullname: 1,
+//                phonenumber: 1,
+//                password: 0,
+//           });
+//           return user;
+//      } else {
+//           return { status: false, message: auth_status?.message };
+//      }
+// };

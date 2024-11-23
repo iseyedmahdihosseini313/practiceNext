@@ -1,4 +1,3 @@
-import connectDB from '@/lib/db';
 import './globals.css';
 import { Vazirmatn } from 'next/font/google';
 const vazir = Vazirmatn({
@@ -10,7 +9,6 @@ export default async function RootLayout({
 }: Readonly<{
      children: React.ReactNode;
 }>) {
-     await connectDB().then(()=>console.log("connect to mongodb")).catch(err => console.error('Failed to connect to database:', err));
 
      return (
           <html lang="en">
